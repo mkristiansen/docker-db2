@@ -3,16 +3,16 @@
 FROM ubuntu
 
 # --- Add Canonical Partner repo ---
-RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-security main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-updates main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-proposed main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-backports main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-security main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-updates main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-proposed main restricted universe multiverse' >> /etc/apt/sources.list
-RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-backports main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-security main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-updates main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb http://mirrors.sohu.com/ubuntu/ trusty-backports main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-security main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-updates main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+# RUN echo 'deb-src http://mirrors.sohu.com/ubuntu/ trusty-backports main restricted universe multiverse' >> /etc/apt/sources.list
 
 # --- Updating packages list ---
 RUN apt-get -qq update --fix-missing
